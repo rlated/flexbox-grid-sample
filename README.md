@@ -46,7 +46,7 @@ flexboxを使ってグリッドレイアウトをするサンプルです。
 ## Demos
 
 - [flexbox-grid-sample.cssを使ったデモ](http://code.rlated.net/flexbox/demo.html)
-- [flexbox-grid-sample.cssを使った3カラムレイアウトのデモ](http://code.rlated.net/flexbox/demo-3column.html)
+- [flexbox-grid-sample.cssを使った3カラムレイアウトのデモ](http://code.rlated.net/flexbox/demo-3column-layout.html)
 
 ## License
 
