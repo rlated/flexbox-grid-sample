@@ -1,0 +1,79 @@
+/*!
+ * flexbox-grid-sample
+ * https://github.com/rlated/flexbox-grid-sample
+ * MIT License
+ */
+
+.container {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+}
+
+.container > .row {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+
+.container.pad > .row {
+  margin-top: 20px;
+}
+.container.pad > .row:first-child {
+  margin-top: 0;
+}
+
+.container.pad > .row > *[class*="col-"] {
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container.pad > .row > *[class*="col-"]:first-child {
+  padding-left: 0;
+}
+.container.pad > .row > *[class*="col-"]:last-child {
+  padding-right: 0;
+}
+
+.container > .row > .col-1 { flex-basis: 8.33%; }
+.container > .row > .col-2 { flex-basis: 16.66%; }
+.container > .row > .col-3 { flex-basis: 25%; }
+.container > .row > .col-4 { flex-basis: 33.33%; }
+.container > .row > .col-5 { flex-basis: 41.66%; }
+.container > .row > .col-6 { flex-basis: 50%; }
+.container > .row > .col-7 { flex-basis: 58.33%; }
+.container > .row > .col-8 { flex-basis: 66.66%; }
+.container > .row > .col-9 { flex-basis: 74.99%; }
+.container > .row > .col-10 { flex-basis: 83.33%; }
+.container > .row > .col-11 { flex-basis: 91.66%; }
+.container > .row > .col-12 { flex-basis: 100%; }
+
+@media screen and (max-width: 767px){
+
+  .container > .row {
+    -webkit-flex-flow: column;
+    flex-flow: column;
+  }
+  .container > .row > *[class*="col-"] {
+    flex-basis: auto;
+  }
+
+  .container.pad > .row {
+    margin-top: 0;
+  }
+  .container.pad > .row > *[class*="col-"] {
+    margin-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .container.pad > .row:first-child > *[class*="col-"]:first-child {
+    margin-top: 0;
+  }
+
+}
