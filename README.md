@@ -54,4 +54,4 @@ flexboxを使ってグリッドレイアウトをするサンプルです。
 
 - - -
 ホームページの作り方  
-<http://rlated.net/>
+<https://rlated.net/>
